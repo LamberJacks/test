@@ -158,7 +158,7 @@
               <div class="article-content">
                 <div class="article-category">Политика</div>
                 <h3 class="article-title">
-                  <a href="#">Саммит G20: итоги и перспективы для России</a>
+                  <a href="./post1.html">Саммит G20: итоги и перспективы для России</a>
                 </h3>
                 <p class="article-excerpt">
                   Анализ результатов последнего саммита G20 и их влияние на
@@ -183,7 +183,7 @@
               <div class="article-content">
                 <div class="article-category">Экономика</div>
                 <h3 class="article-title">
-                  <a href="#"
+                  <a href="./post1.html"
                     >Новые санкции ЕС: анализ и прогнозы для экономики</a
                   >
                 </h3>
@@ -210,7 +210,7 @@
               <div class="article-content">
                 <div class="article-category">Наука</div>
                 <h3 class="article-title">
-                  <a href="#">Новое открытие в области квантовых компьютеров</a>
+                  <a href="./post1.html">Новое открытие в области квантовых компьютеров</a>
                 </h3>
                 <p class="article-excerpt">
                   Российские ученые совершили прорыв в создании квантовых
@@ -235,7 +235,7 @@
               <div class="article-content">
                 <div class="article-category">Спорт</div>
                 <h3 class="article-title">
-                  <a href="#">Чемпионат мира по футболу 2026: новые стадионы</a>
+                  <a href="./post1.html">Чемпионат мира по футболу 2026: новые стадионы</a>
                 </h3>
                 <p class="article-excerpt">
                   Обзор новых футбольных арен, которые примут матчи чемпионата
@@ -261,7 +261,7 @@
               <div class="article-content">
                 <div class="article-category">Технологии</div>
                 <h3 class="article-title">
-                  <a href="#"
+                  <a href="./post1.html"
                     >Искусственный интеллект в медицине: революция в
                     диагностике</a
                   >
@@ -289,7 +289,7 @@
               <div class="article-content">
                 <div class="article-category">Культура</div>
                 <h3 class="article-title">
-                  <a href="#">Новая выставка в Эрмитаже: шедевры Возрождения</a>
+                  <a href="./post1.html">Новая выставка в Эрмитаже: шедевры Возрождения</a>
                 </h3>
                 <p class="article-excerpt">
                   В Санкт-Петербурге открылась уникальная выставка работ Леонардо
@@ -314,7 +314,7 @@
               <div class="article-content">
                 <div class="article-category">Здоровье</div>
                 <h3 class="article-title">
-                  <a href="#">Новый метод лечения онкологических заболеваний</a>
+                  <a href="./post1.html">Новый метод лечения онкологических заболеваний</a>
                 </h3>
                 <p class="article-excerpt">
                   Российские ученые разработали инновационную методику лечения
@@ -339,7 +339,7 @@
               <div class="article-content">
                 <div class="article-category">Бизнес</div>
                 <h3 class="article-title">
-                  <a href="#">Стартапы 2024: самые перспективные направления</a>
+                  <a href="./post1.html">Стартапы 2024: самые перспективные направления</a>
                 </h3>
                 <p class="article-excerpt">
                   Обзор наиболее многообещающих направлений для стартапов в 2024
@@ -365,7 +365,7 @@
               <div class="article-content">
                 <div class="article-category">Политика</div>
                 <h3 class="article-title">
-                  <a href="#">Выборы президента 2024: предварительный анализ</a>
+                  <a href="./post1.html">Выборы президента 2024: предварительный анализ</a>
                 </h3>
                 <p class="article-excerpt">
                   Анализ политической ситуации накануне президентских выборов и
@@ -390,7 +390,7 @@
               <div class="article-content">
                 <div class="article-category">Образование</div>
                 <h3 class="article-title">
-                  <a href="#">Реформа образования: что ждет школы в 2024 году</a>
+                  <a href="./post1.html">Реформа образования: что ждет школы в 2024 году</a>
                 </h3>
                 <p class="article-excerpt">
                   Новые изменения в системе школьного образования и их влияние на
@@ -415,7 +415,7 @@
               <div class="article-content">
                 <div class="article-category">Путешествия</div>
                 <h3 class="article-title">
-                  <a href="#">Топ-10 мест для посещения в России зимой 2024</a>
+                  <a href="./post1.html">Топ-10 мест для посещения в России зимой 2024</a>
                 </h3>
                 <p class="article-excerpt">
                   Лучшие зимние направления для туристов в России: от горнолыжных
@@ -441,7 +441,7 @@
               <div class="article-content">
                 <div class="article-category">Экономика</div>
                 <h3 class="article-title">
-                  <a href="#">Криптовалюты: регуляция и будущее в России</a>
+                  <a href="./post1.html">Криптовалюты: регуляция и будущее в России</a>
                 </h3>
                 <p class="article-excerpt">
                   Анализ нового законодательства о криптовалютах и прогнозы
@@ -489,6 +489,55 @@
       </div>
     </footer>
 
-    <script src="archive.js"></script>
+    // Добавьте перед закрывающим тегом </body>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const dropdowns = document.querySelectorAll('.dropdown');
+      
+      // Закрытие всех выпадающих меню при клике вне
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown')) {
+          dropdowns.forEach(dropdown => {
+            dropdown.classList.remove('active');
+          });
+        }
+      });
+      
+      // Переключение выпадающих меню
+      dropdowns.forEach(dropdown => {
+        const btn = dropdown.querySelector('.dropdown-btn');
+        
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          
+          // Закрыть все другие меню
+          dropdowns.forEach(other => {
+            if (other !== dropdown) {
+              other.classList.remove('active');
+            }
+          });
+          
+          // Переключить текущее
+          dropdown.classList.toggle('active');
+        });
+        
+        // Закрыть при клике на пункт
+        const links = dropdown.querySelectorAll('.dropdown-content a');
+        links.forEach(link => {
+          link.addEventListener('click', function() {
+            dropdown.classList.remove('active');
+            
+            // Обновить текст кнопки на выбранный пункт
+            const icon = btn.querySelector('i:first-child');
+            const text = this.textContent.trim();
+            const iconClass = this.querySelector('i').className;
+            
+            // Сохраняем первый иконку, меняем только текст
+            btn.innerHTML = `${icon.outerHTML} ${text} <i class="fas fa-chevron-down dropdown-arrow"></i>`;
+          });
+        });
+      });
+    });
+    </script>
   </body>
 </html>
