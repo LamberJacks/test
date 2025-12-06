@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Архив статей | NewsPortal</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="archive.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Хедер -->
+    <header class="header">
+      <div class="container">
+        <div class="header_inner">
+          <a href="./index.html" class="header_logo">
+            <img src="./img/logo.png" alt="" />
+          </a>
+          <nav class="nav">
+            <a href="./index.html"><i class="fas fa-home"></i> Главная</a>
+            <a href="./archive.html"
+              ><i class="fas fa-newspaper"></i>Архив статей</a
+            >
+          </nav>
+
+          <div class="search header_search">
+            <div class="search-box">
+              <input type="text" placeholder="Поиск по сайту..." />
+              <button type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Архив статей -->
+    <main class="archive-page">
+      <!-- Шапка архива -->
+      <div class="archive-header">
+        <h1><i class="fas fa-book-open"></i> Архив статей</h1>
+        <p class="archive-subtitle">
+          Полная база статей с 2017 года. Найдено:
+          <span class="article-count">2,847</span> материалов
+        </p>
+        <div class="archive-filters">
+          <div class="dropdown">
+            <button class="dropdown-btn">
+              <i class="fas fa-calendar"></i> Выберите год
+              <i class="fas fa-chevron-down dropdown-arrow"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#2024"><i class="fas fa-calendar-check"></i> 2024 год</a>
+              <a href="#2023"><i class="fas fa-calendar-check"></i> 2023 год</a>
+              <a href="#2022"><i class="fas fa-calendar-check"></i> 2022 год</a>
+              <a href="#2021"><i class="fas fa-calendar-check"></i> 2021 год</a>
+              <a href="#2020"><i class="fas fa-calendar-check"></i> 2020 год</a>
+              <a href="#2019"><i class="fas fa-calendar-check"></i> 2019 год</a>
+              <a href="#2018"><i class="fas fa-calendar-check"></i> 2018 год</a>
+              <a href="#2017"><i class="fas fa-calendar-check"></i> 2017 год</a>
+            </div>
+          </div>
+          
+          <!-- Выпадающее меню "Месяц" -->
+          <div class="dropdown">
+            <button class="dropdown-btn">
+              <i class="fas fa-calendar-alt"></i> Выберите месяц
+              <i class="fas fa-chevron-down dropdown-arrow"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#january"><i class="fas fa-snowflake"></i> Январь</a>
+              <a href="#february"><i class="fas fa-heart"></i> Февраль</a>
+              <a href="#march"><i class="fas fa-seedling"></i> Март</a>
+              <a href="#april"><i class="fas fa-umbrella"></i> Апрель</a>
+              <a href="#may"><i class="fas fa-leaf"></i> Май</a>
+              <a href="#june"><i class="fas fa-sun"></i> Июнь</a>
+              <a href="#july"><i class="fas fa-sun"></i> Июль</a>
+              <a href="#august"><i class="fas fa-umbrella-beach"></i> Август</a>
+              <a href="#september"><i class="fas fa-graduation-cap"></i> Сентябрь</a>
+              <a href="#october"><i class="fas fa-tree"></i> Октябрь</a>
+              <a href="#november"><i class="fas fa-cloud"></i> Ноябрь</a>
+              <a href="#december"><i class="fas fa-gift"></i> Декабрь</a>
+            </div>
+          </div>
+          
+          <!-- Выпадающее меню "Категория" -->
+          <div class="dropdown">
+            <button class="dropdown-btn">
+              <i class="fas fa-tags"></i> Выберите категорию
+              <i class="fas fa-chevron-down dropdown-arrow"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#politics"><i class="fas fa-landmark"></i> Государство</a>
+              <a href="#career"><i class="fas fa-briefcase"></i> Карьера</a>
+              <a href="#capital"><i class="fas fa-chart-line"></i> Капитал</a>
+              <a href="#economy"><i class="fas fa-money-bill-wave"></i> Экономика</a>
+              <a href="#law"><i class="fas fa-gavel"></i> Право</a>
+              <a href="#technology"><i class="fas fa-laptop-code"></i> Технологии</a>
+              <a href="#education"><i class="fas fa-graduation-cap"></i> Образование</a>
+              <a href="#health"><i class="fas fa-heartbeat"></i> Здоровье</a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Сетка статей -->
+      <div class="archive-content">
+        <div class="articles-header">
+          <h2>
+            <i class="fas fa-newspaper"></i> Статьи
+            <span class="filter-info">(показано: 12 из 2,847)</span>
+          </h2>
+          <div class="view-controls">
+            <button class="view-btn active" data-view="grid">
+              <i class="fas fa-th"></i>
+            </button>
+            <button class="view-btn" data-view="list">
+              <i class="fas fa-list"></i>
+            </button>
+            <button class="view-btn" data-view="compact">
+              <i class="fas fa-grip-lines"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Сетка статей -->
+        <div class="articles-grid grid-view">
+          <!-- Статья 1 -->
+          <article class="article-card">
+            <div class="article-badge">Новое</div>
+            <div class="article-date">
+              <span class="date-day">15</span>
+              <span class="date-month">мар</span>
+              <span class="date-year">2024</span>
+            </div>
+            <div class="article-content">
+              <div class="article-category">Политика</div>
+              <h3 class="article-title">
+                <a href="#">Саммит G20: итоги и перспективы для России</a>
+              </h3>
+              <p class="article-excerpt">
+                Анализ результатов последнего саммита G20 и их влияние на
+                внешнюю политику России в условиях современных вызовов.
+              </p>
+              <div class="article-tags">
+                <span class="tag">G20</span>
+                <span class="tag">дипломатия</span>
+                <span class="tag">международные отношения</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Статья 2 -->
+          <article class="article-card">
+            <div class="article-badge popular">Популярное</div>
+            <div class="article-date">
+              <span class="date-day">10</span>
+              <span class="date-month">мар</span>
+              <span class="date-year">2024</span>
+            </div>
+            <div class="article-content">
+              <div class="article-category">Экономика</div>
+              <h3 class="article-title">
+                <a href="#"
+                  >Новые санкции ЕС: анализ и прогнозы для экономики</a
+                >
+              </h3>
+              <p class="article-excerpt">
+                Подробный разбор новых санкционных пакетов Европейского союза и
+                их влияние на российскую экономику в 2024 году.
+              </p>
+              
+              <div class="article-tags">
+                <span class="tag">санкции</span>
+                <span class="tag">экономика</span>
+                <span class="tag">ЕС</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Статья 3 -->
+          <article class="article-card">
+            <div class="article-date">
+              <span class="date-day">05</span>
+              <span class="date-month">мар</span>
+              <span class="date-year">2024</span>
+            </div>
+            <div class="article-content">
+              <div class="article-category">Наука</div>
+              <h3 class="article-title">
+                <a href="#">Новое открытие в области квантовых компьютеров</a>
+              </h3>
+              <p class="article-excerpt">
+                Российские ученые совершили прорыв в создании квантовых
+                процессоров. Что это значит для будущего технологий?
+              </p>
+              
+              <div class="article-tags">
+                <span class="tag">квантовые технологии</span>
+                <span class="tag">наука</span>
+                <span class="tag">инновации</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Статья 4 -->
+          <article class="article-card">
+            <div class="article-date">
+              <span class="date-day">28</span>
+              <span class="date-month">фев</span>
+              <span class="date-year">2024</span>
+            </div>
+            <div class="article-content">
+              <div class="article-category">Спорт</div>
+              <h3 class="article-title">
+                <a href="#">Чемпионат мира по футболу 2026: новые стадионы</a>
+              </h3>
+              <p class="article-excerpt">
+                Обзор новых футбольных арен, которые примут матчи чемпионата
+                мира 2026 года в США, Канаде и Мексике.
+              </p>
+              
+              <div class="article-tags">
+                <span class="tag">футбол</span>
+                <span class="tag">чемпионат мира</span>
+                <span class="tag">спорт</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Статья 5 -->
+          <article class="article-card">
+            <div class="article-badge">Аналитика</div>
+            <div class="article-date">
+              <span class="date-day">20</span>
+              <span class="date-month">фев</span>
+              <span class="date-year">2024</span>
+            </div>
+            <div class="article-content">
+              <div class="article-category">Технологии</div>
+              <h3 class="article-title">
+                <a href="#"
+                  >Искусственный интеллект в медицине: революция в
+                  диагностике</a
+                >
+              </h3>
+              <p class="article-excerpt">
+                Как нейросети помогают врачам ставить точные диагнозы и какие
+                технологии изменят медицину в ближайшие годы.
+              </p>
+              
+              <div class="article-tags">
+                <span class="tag">ИИ</span>
+                <span class="tag">медицина</span>
+                <span class="tag">технологии</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Статья 6 -->
+          <article class="article-card">
+            <div class="article-date">
+              <span class="date-day">15</span>
+              <span class="date-month">фев</span>
+              <span class="date-year">2024</span>
+            </div>
+            <div class="article-content">
+              <div class="article-category">Культура</div>
+              <h3 class="article-title">
+                <a href="#">Новая выставка в Эрмитаже: шедевры Возрождения</a>
+              </h3>
+              <p class="article-excerpt">
+                В Санкт-Петербурге открылась уникальная выставка работ Леонардо
+                да Винчи, Микеланджело и Рафаэля.
+              </p>
+              
+              <div class="article-tags">
+                <span class="tag">искусство</span>
+                <span class="tag">выставка</span>
+                <span class="tag">культура</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Статья 7 -->
+          <article class="article-card">
+            <div class="article-date">
+              <span class="date-day">10</span>
+              <span class="date-month">фев</span>
+              <span class="date-year">2024</span>
+            </div>
+            <div class="article-content">
+              <div class="article-category">Здоровье</div>
+              <h3 class="article-title">
+                <a href="#">Новый метод лечения онкологических заболеваний</a>
+              </h3>
+              <p class="article-excerpt">
+                Российские ученые разработали инновационную методику лечения
+                рака с использованием наночастиц.
+              </p>
+              
+              <div class="article-tags">
+                <span class="tag">медицина</span>
+                <span class="tag">онкология</span>
+                <span class="tag">лечение</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Статья 8 -->
+          <article class="article-card">
+            <div class="article-date">
+              <span class="date-day">05</span>
+              <span class="date-month">фев</span>
+              <span class="date-year">2024</span>
+            </div>
+            <div class="article-content">
+              <div class="article-category">Бизнес</div>
+              <h3 class="article-title">
+                <a href="#">Стартапы 2024: самые перспективные направления</a>
+              </h3>
+              <p class="article-excerpt">
+                Обзор наиболее многообещающих направлений для стартапов в 2024
+                году по мнению ведущих инвесторов.
+              </p>
+              
+              <div class="article-tags">
+                <span class="tag">стартапы</span>
+                <span class="tag">бизнес</span>
+                <span class="tag">инвестиции</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Статья 9 -->
+          <article class="article-card">
+            <div class="article-badge archive">Архив</div>
+            <div class="article-date">
+              <span class="date-day">15</span>
+              <span class="date-month">дек</span>
+              <span class="date-year">2023</span>
+            </div>
+            <div class="article-content">
+              <div class="article-category">Политика</div>
+              <h3 class="article-title">
+                <a href="#">Выборы президента 2024: предварительный анализ</a>
+              </h3>
+              <p class="article-excerpt">
+                Анализ политической ситуации накануне президентских выборов и
+                прогнозы экспертов.
+              </p>
+              
+              <div class="article-tags">
+                <span class="tag">выборы</span>
+                <span class="tag">политика</span>
+                <span class="tag">анализ</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Статья 10 -->
+          <article class="article-card">
+            <div class="article-date">
+              <span class="date-day">10</span>
+              <span class="date-month">ноя</span>
+              <span class="date-year">2023</span>
+            </div>
+            <div class="article-content">
+              <div class="article-category">Образование</div>
+              <h3 class="article-title">
+                <a href="#">Реформа образования: что ждет школы в 2024 году</a>
+              </h3>
+              <p class="article-excerpt">
+                Новые изменения в системе школьного образования и их влияние на
+                учебный процесс.
+              </p>
+              
+              <div class="article-tags">
+                <span class="tag">образование</span>
+                <span class="tag">школы</span>
+                <span class="tag">реформа</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Статья 11 -->
+          <article class="article-card">
+            <div class="article-date">
+              <span class="date-day">25</span>
+              <span class="date-month">окт</span>
+              <span class="date-year">2023</span>
+            </div>
+            <div class="article-content">
+              <div class="article-category">Путешествия</div>
+              <h3 class="article-title">
+                <a href="#">Топ-10 мест для посещения в России зимой 2024</a>
+              </h3>
+              <p class="article-excerpt">
+                Лучшие зимние направления для туристов в России: от горнолыжных
+                курортов до культурных столиц.
+              </p>
+              
+              <div class="article-tags">
+                <span class="tag">туризм</span>
+                <span class="tag">зима</span>
+                <span class="tag">Россия</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Статья 12 -->
+          <article class="article-card">
+            <div class="article-badge archive">Архив</div>
+            <div class="article-date">
+              <span class="date-day">15</span>
+              <span class="date-month">сен</span>
+              <span class="date-year">2023</span>
+            </div>
+            <div class="article-content">
+              <div class="article-category">Экономика</div>
+              <h3 class="article-title">
+                <a href="#">Криптовалюты: регуляция и будущее в России</a>
+              </h3>
+              <p class="article-excerpt">
+                Анализ нового законодательства о криптовалютах и прогнозы
+                развития рынка цифровых активов.
+              </p>
+              
+              <div class="article-tags">
+                <span class="tag">криптовалюты</span>
+                <span class="tag">финансы</span>
+                <span class="tag">регуляция</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Пагинация -->
+        <div class="archive-pagination">
+          <button class="page-prev" disabled>
+            <i class="fas fa-chevron-left"></i> Назад
+          </button>
+          <div class="page-numbers">
+            <button class="page-number active">1</button>
+            <button class="page-number">2</button>
+            <button class="page-number">3</button>
+            <button class="page-number">4</button>
+            <span class="page-dots">...</span>
+            <button class="page-number">24</button>
+          </div>
+          <button class="page-next">
+            Вперед <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="page-info">Показано 1-12 из 2,847 статей</div>
+        </div>
+
+      
+      </div>
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2025 StopFas.</p>
+        <p>Все статьи защищены авторским правом | Контакты: test.gmail.ru</p>
+      </div>
+    </footer>
+
+    <script src="archive.js"></script>
+  </body>
+</html>
