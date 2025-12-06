@@ -43,8 +43,8 @@
 
 /* Шапка статьи */
 .post-header {
-  margin-bottom: 40px;
-  padding-bottom: 20px;
+  /* margin-bottom: 10px;
+  padding-bottom: 10px; */
   border-bottom: 2px solid #e5e7eb;
 }
 
@@ -152,23 +152,21 @@
 
 /* Контент статьи */
 .post-content {
-  font-size: 18px;
-  line-height: 1.8;
+  font-size: 17px;
+  line-height: 1.5;
   color: #374151;
   margin-bottom: 50px;
 }
 
 .post-content h2 {
-  font-size: 28px;
-  margin: 40px 0 20px;
+  font-size: 22px;
   color: #1f2937;
   padding-bottom: 10px;
   border-bottom: 2px solid #e5e7eb;
 }
 
 .post-content h3 {
-  font-size: 22px;
-  margin: 30px 0 15px;
+  font-size: 20px;
   color: #1f2937;
 }
 
@@ -571,6 +569,7 @@
 
   .post-content {
     font-size: 16px;
+    padding: 0 20px;
   }
 
   .post-content h2 {

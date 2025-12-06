@@ -11,7 +11,7 @@ body {
 .wrapper {
   min-height: 100%;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,8 +27,8 @@ body {
 .header {
   background: var(--main-bg-color);
   width: 100%;
-  padding: 0px 0 5px 0;
-  margin-bottom: 50px;
+  padding: 0px 0 10px 0;
+  margin-bottom: 40px;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
   position: relative;
   z-index: 100;
@@ -159,6 +159,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
 }
 .post-image img {
   width: 100%;
@@ -179,7 +180,7 @@ body {
 }
 
 .post-content {
-  padding: 25px;
+  padding: 0 25px;
 }
 
 .post-content h3 {
